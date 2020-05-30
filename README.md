@@ -1,2 +1,0 @@
-# artwork
-Created with CodeSandbox
