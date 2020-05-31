@@ -1,194 +1,337 @@
+import P0 from './images/p_0.JPG';
+import P1 from './images/p_1.jpg';
+import P2 from './images/p_2.JPG';
+import P3 from './images/p_3.JPG';
+import P4 from './images/p_4.JPG';
+import P5 from './images/p_5.JPG';
+import P6 from './images/p_6.JPG';
+import P7 from './images/p_7.jpg';
+import I0 from './images/i_0.jpg';
+import D0 from './images/d_0.jpg';
+import D1 from './images/d_1.jpg';
+import D2 from './images/d_2.jpg';
+import D3 from './images/d_3.jpg';
+import D4 from './images/d_4.jpg';
+import C0 from './images/c_0.JPG';
+import C1 from './images/c_1.JPG';
+import C2 from './images/c_2.JPG';
+import C3 from './images/c_3.JPG';
+import L0 from './images/l_0.jpeg';
+import L1 from './images/l_1.jpeg';
+import L2 from './images/l_2.jpeg';
+import L3 from './images/l_3.jpeg';
+import L4 from './images/l_4.jpg';
+import S0 from './images/s_0.jpeg';
+import S1 from './images/s_1.jpg';
+import S2 from './images/s_2.jpg';
+
 export const data = {
-  painting: {
-    series: [
-      { id: 1, serie: "inedito", text: "inedito" },
-      { id: 2, serie: "b/w", text: "lorem ipsum" }
-    ],
-    inedito: [
-      {
-        id: 1,
-        image: "string",
-        title: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      }
-    ],
-    bw: [
-      {
-        id: 1,
-        image: "string",
-        name: "b/w",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 2,
-        image: "string",
-        name: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 3,
-        image: "string",
-        name: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 4,
-        image: "string",
-        name: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 5,
-        image: "string",
-        name: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      }
-    ],
-    sunya: [
-      {
-        id: 1,
-        image: "string",
-        name: "b/w",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      }
-    ]
-  },
-  drawing: {
-    series: [{ id: 1, serie: "untitled", text: "inedito" }],
+	painting: {
+		series: [
+			{ id: 1, serie: 'inedito', text: 'inedito' },
+			{ id: 2, serie: 'b/w', text: 'lorem ipsum' },
+			{ id: 2, serie: 'sunya', text: 'lorem ipsum' },
+		],
+		inedito: [
+			{
+				id: 1,
+				image: { I0 },
+				title: 'single',
+				technique: 'oil on canvas',
+				sold: false,
+				overview: 'overview',
+			},
+		],
+		bw: [
+			{
+				id: 1,
+				image: { P0 },
+				name: 'b/w',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 2,
+				image: { P1 },
+				name: 'single',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 3,
+				image: { P2 },
+				name: 'single',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 4,
+				image: { P3 },
+				name: 'single',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 5,
+				image: { P4 },
+				name: 'single',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 6,
+				image: { P5 },
+				name: 'single',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
 
-    untitled: [
-      {
-        id: 6,
-        image: "string",
-        name: "single",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 7,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      }
-    ]
-  },
+			{
+				id: 7,
+				image: { P6 },
+				name: 'single',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+		],
+		sunya: [
+			{
+				id: 1,
+				image: { P7 },
+				name: 'untitled',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+			},
+		],
+	},
+	drawing: {
+		series: [{ id: 1, serie: 'untitled', text: 'drawings' }],
 
-  cutpaper: {
-    series: [{ id: 1, serie: "sunya", text: "inedito" }],
-    sunya: [
-      {
-        id: 1,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 1,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 1,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 1,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      },
-      {
-        id: 1,
-        image: "string",
-        title: "title",
-        technique: "technique",
-        sold: true,
-        overview: "overview"
-      }
-    ]
-  },
+		untitled: [
+			{
+				id: 1,
+				image: { D0 },
+				name: 'single',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 2,
+				image: { D1 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 3,
+				image: { D2 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 4,
+				image: { D3 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 5,
+				image: { D4 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+		],
+	},
 
-  design: {
-    series: [
-      { id: 1, serie: "architectural", text: "inedito" },
-      { id: 1, serie: "sketches" }
-    ]
-  },
-  lamps: [
-    {
-      id: 1,
-      image: "string",
-      title: "title",
-      technique: "technique",
-      sold: true,
-      overview: "overview"
-    },
-    {
-      id: 1,
-      image: "string",
-      title: "title",
-      technique: "technique",
-      sold: true,
-      overview: "overview"
-    },
-    {
-      id: 1,
-      image: "string",
-      title: "title",
-      technique: "technique",
-      sold: true,
-      overview: "overview"
-    }
-  ],
-  sketches: [
-    {
-      id: 1,
-      image: "string"
-    }
-  ],
+	cutpaper: {
+		series: [{ id: 1, serie: 'sunya', text: 'inedito' }],
+		opart: [
+			{
+				id: 1,
+				image: { C0 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 2,
+				image: { C1 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 3,
+				image: { C2 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 4,
+				image: { C3 },
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+		],
+	},
 
-  about: {
-    contact: {
-      email: "email",
-      phone: "phone"
-    },
-    me: { intro: "heading", sub: "sub", body: "body" }
-  },
-  bio: {
-    about: "me",
-    exhibitions: {
-      title: "title",
-      year: 2000,
-      location: "location"
-    }
-  }
+	design: {
+		series: [
+			{ id: 1, serie: 'architectural', text: 'inedito' },
+			{ id: 1, serie: 'sketches' },
+		],
+	},
+	lamps: [
+		{
+			id: 1,
+			image: { L0 },
+			title: 'title',
+			technique: 'technique',
+			sold: true,
+			overview: 'overview',
+		},
+		{
+			id: 2,
+			image: { L1 },
+			title: 'title',
+			technique: 'technique',
+			sold: true,
+			overview: 'overview',
+		},
+		{
+			id: 3,
+			image: { L2 },
+			title: 'title',
+			technique: 'technique',
+			sold: true,
+			overview: 'overview',
+		},
+		{
+			id: 4,
+			image: { L3 },
+			title: 'title',
+			technique: 'technique',
+			sold: true,
+			overview: 'overview',
+		},
+		{
+			id: 5,
+			image: { L4 },
+			title: 'title',
+			technique: 'technique',
+			sold: true,
+			overview: 'overview',
+		},
+	],
+	sketches: [
+		{
+			id: 1,
+			image: { S0 },
+		},
+		{
+			id: 2,
+			image: { S1 },
+		},
+		{
+			id: 3,
+			image: { S2 },
+		},
+	],
+
+	about: {
+		contact: {
+			email: 'amelrc@gmail.com',
+			phone: '+31643846453',
+		},
+		me: { intro: 'heading', sub: 'sub', body: 'body' },
+	},
+	bio: {
+		about:
+			'Amel, born in Havana, has been working as an artist for more than 15 years. He is a multidisciplinary artist who lives in The Hague, The Netherlands. Amel started to receive professional art lessons as a young talent at Taller d’Manero cultural program, continuing his artistic development at The National Academy of Fine Arts San Alejandro in Havana in Cuba. Holding a Master in Cultural Heritage from the Reinwardt Academy in Amsterdam, his artistic practice includes different disciplines such as painting, sculpture, drawing and cut-paper. Having the human being as the center of his work thematic, Amel illustrates emotions and behaviors that are present in our every day life. Questioning the human thinking and the mind, themes like fragility, violence, uncertainty, power, irrationality and death, form part of his realm of inspiration.',
+		exhibitions: [
+			{
+				id: 1,
+				title: 'Charity Auction Terry Fox',
+				year: 2010,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 2,
+				title: 'Cuarteto Artístico: Cuatro Amigos una Cuba',
+				year: 2010,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 3,
+				title: 'Artistas Cubanos',
+				year: 2008,
+				location: 'Madrid, Spain',
+			},
+			{
+				id: 4,
+				title: 'Panorama 42',
+				year: 2008,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 5,
+				title: 'Prajnaparamita: Perfección de la Sabiduría',
+				year: 2007,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 6,
+				title: 'Tribute to Concha Ferrant',
+				year: 2007,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 7,
+				title: '3D Art Salon Recuerdo de una Época',
+				year: 2006,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 8,
+				title: 'Playa Art Competition',
+				year: 2005,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 9,
+				title: 'Performance in Honor to Peace',
+				year: 2003,
+				location: 'Havana, Cuba',
+			},
+			{
+				id: 10,
+				title: 'Malas fotos para cualquier historia',
+				year: 2003,
+				location: 'Havana, Cuba',
+			},
+		],
+	},
 };
-console.log(data.painting.series.map(s => s.id));
+console.log(data.bio.about);
