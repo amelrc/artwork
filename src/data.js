@@ -26,91 +26,113 @@ import S1 from './images/s_1.jpg';
 import S2 from './images/s_2.jpg';
 
 export const data = {
+	artwork:
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 	painting: {
 		series: [
-			{ id: 1, serie: 'inedito', text: 'inedito' },
-			{ id: 2, serie: 'b/w', text: 'lorem ipsum' },
-			{ id: 2, serie: 'sunya', text: 'lorem ipsum' },
-		],
-		inedito: [
 			{
 				id: 1,
-				image: { I0 },
-				title: 'single',
-				technique: 'oil on canvas',
-				sold: false,
-				overview: 'overview',
+				serie: 'inedito',
+				text:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			},
+			{
+				id: 2,
+				serie: 'b&w',
+				text:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			},
+			{
+				id: 2,
+				serie: 'sunya',
+				text:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 			},
 		],
+		inedito: {
+			id: 1,
+			image: I0,
+			name: 'Yo tengo piedad de mi mismo',
+			technique: 'oil on canvas',
+			sold: true,
+			overview: 'overview',
+			size: '200cm x 200cm',
+		},
+
 		bw: [
 			{
 				id: 1,
-				image: { P0 },
+				image: P0,
 				name: 'b/w',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 100cm',
 			},
 			{
 				id: 2,
-				image: { P1 },
+				image: P1,
 				name: 'single',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 100cm',
 			},
 			{
 				id: 3,
-				image: { P2 },
+				image: P2,
 				name: 'single',
 				technique: 'oil on canvas',
-				sold: true,
+				sold: false,
 				overview: 'overview',
+				size: '130cm x 150cm',
 			},
 			{
 				id: 4,
-				image: { P3 },
+				image: P3,
 				name: 'single',
 				technique: 'oil on canvas',
-				sold: true,
+				sold: false,
 				overview: 'overview',
+				size: '100cm x 100cm',
 			},
 			{
 				id: 5,
-				image: { P4 },
+				image: P4,
 				name: 'single',
 				technique: 'technique',
-				sold: true,
+				sold: false,
 				overview: 'overview',
+				size: '100cm x 100cm',
 			},
 			{
 				id: 6,
-				image: { P5 },
+				image: P5,
 				name: 'single',
 				technique: 'oil on canvas',
-				sold: true,
+				sold: false,
 				overview: 'overview',
+				size: '40cm x 40cm',
 			},
 
 			{
 				id: 7,
-				image: { P6 },
+				image: P6,
 				name: 'single',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: 'overview',
+				size: '120cm x 150cm',
 			},
 		],
-		sunya: [
-			{
-				id: 1,
-				image: { P7 },
-				name: 'untitled',
-				technique: 'oil on canvas',
-				sold: true,
-				overview: 'overview',
-			},
-		],
+		sunya: {
+			id: 1,
+			image: P7,
+			name: 'untitled',
+			technique: 'oil on canvas',
+			sold: false,
+			overview: 'overview',
+		},
 	},
 	drawing: {
 		series: [{ id: 1, serie: 'untitled', text: 'drawings' }],
