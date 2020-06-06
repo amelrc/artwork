@@ -49,15 +49,17 @@ export const data = {
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 			},
 		],
-		inedito: {
-			id: 1,
-			image: I0,
-			name: 'Yo tengo piedad de mi mismo',
-			technique: 'oil on canvas',
-			sold: true,
-			overview: 'overview',
-			size: '200cm x 200cm',
-		},
+		inedito: [
+			{
+				id: 1,
+				image: I0,
+				name: 'Yo tengo piedad de mi mismo',
+				technique: 'oil on canvas',
+				sold: true,
+				overview: 'overview',
+				size: '200cm x 200cm',
+			},
+		],
 
 		bw: [
 			{
@@ -125,14 +127,16 @@ export const data = {
 				size: '120cm x 150cm',
 			},
 		],
-		sunya: {
-			id: 1,
-			image: P7,
-			name: 'untitled',
-			technique: 'oil on canvas',
-			sold: false,
-			overview: 'overview',
-		},
+		sunya: [
+			{
+				id: 1,
+				image: P7,
+				name: 'untitled',
+				technique: 'oil on canvas',
+				sold: false,
+				overview: 'overview',
+			},
+		],
 	},
 	drawing: {
 		series: [{ id: 1, serie: 'untitled', text: 'drawings' }],
@@ -140,53 +144,58 @@ export const data = {
 		untitled: [
 			{
 				id: 1,
-				image: { D0 },
-				name: 'single',
-				technique: 'technique',
+				image: D0,
+				name: 'untitled',
+				technique: 'graphite on paper',
 				sold: true,
 				overview: 'overview',
+				size: '150cm x 120cm',
 			},
 			{
 				id: 2,
-				image: { D1 },
-				title: 'title',
-				technique: 'technique',
+				image: D1,
+				name: 'untitled',
+				technique: 'graphite on paper',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 70cm',
 			},
 			{
 				id: 3,
-				image: { D2 },
-				title: 'title',
-				technique: 'technique',
+				image: D2,
+				name: 'untitled',
+				technique: 'graphite on paper',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 70cm',
 			},
 			{
 				id: 4,
-				image: { D3 },
-				title: 'title',
-				technique: 'technique',
+				image: D3,
+				name: 'untitled',
+				technique: 'graphite on paper',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 70cm',
 			},
 			{
 				id: 5,
-				image: { D4 },
-				title: 'title',
-				technique: 'technique',
+				image: D4,
+				name: 'untitled',
+				technique: 'graphite on paper',
 				sold: true,
 				overview: 'overview',
+				size: '100cm x 70cm',
 			},
 		],
 	},
 
 	cutpaper: {
-		series: [{ id: 1, serie: 'sunya', text: 'inedito' }],
+		series: [{ id: 1, serie: 'Optical Illusions', text: 'inedito' }],
 		opart: [
 			{
 				id: 1,
-				image: { C0 },
+				image: C0,
 				title: 'title',
 				technique: 'technique',
 				sold: true,
@@ -194,7 +203,7 @@ export const data = {
 			},
 			{
 				id: 2,
-				image: { C1 },
+				image: C1,
 				title: 'title',
 				technique: 'technique',
 				sold: true,
@@ -202,7 +211,7 @@ export const data = {
 			},
 			{
 				id: 3,
-				image: { C2 },
+				image: C2,
 				title: 'title',
 				technique: 'technique',
 				sold: true,
@@ -210,7 +219,7 @@ export const data = {
 			},
 			{
 				id: 4,
-				image: { C3 },
+				image: C3,
 				title: 'title',
 				technique: 'technique',
 				sold: true,
@@ -228,7 +237,7 @@ export const data = {
 	lamps: [
 		{
 			id: 1,
-			image: { L0 },
+			image: L0,
 			title: 'title',
 			technique: 'technique',
 			sold: true,
@@ -236,7 +245,7 @@ export const data = {
 		},
 		{
 			id: 2,
-			image: { L1 },
+			image: L1,
 			title: 'title',
 			technique: 'technique',
 			sold: true,
@@ -244,7 +253,7 @@ export const data = {
 		},
 		{
 			id: 3,
-			image: { L2 },
+			image: L2,
 			title: 'title',
 			technique: 'technique',
 			sold: true,
@@ -252,7 +261,7 @@ export const data = {
 		},
 		{
 			id: 4,
-			image: { L3 },
+			image: L3,
 			title: 'title',
 			technique: 'technique',
 			sold: true,
@@ -260,7 +269,7 @@ export const data = {
 		},
 		{
 			id: 5,
-			image: { L4 },
+			image: L4,
 			title: 'title',
 			technique: 'technique',
 			sold: true,
@@ -270,15 +279,15 @@ export const data = {
 	sketches: [
 		{
 			id: 1,
-			image: { S0 },
+			image: S0,
 		},
 		{
 			id: 2,
-			image: { S1 },
+			image: S1,
 		},
 		{
 			id: 3,
-			image: { S2 },
+			image: S2,
 		},
 	],
 

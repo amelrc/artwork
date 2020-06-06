@@ -1,10 +1,10 @@
 import React from 'react';
 import { Art } from './art';
 
-export const Inedito = (props) => {
+export const OpArt = (props) => {
 	return (
 		<>
-			{props.inedito.map((art) => (
+			{props.opart.map((art) => (
 				<Art
 					key={art.id}
 					id={art.id}

@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { data } from '../data';
 import { device } from './art';
-import { Inedito } from './inedito';
-import { Bw } from './bw';
-import { Sunya } from './sunya';
+import { Untitled } from './untitled';
 
 const Ul = styled.ul`
 	padding: 0;
@@ -30,26 +28,16 @@ export const H1 = styled.h1`
 	color: #5a5a5a;
 	margin: 0 30px;
 `;
-export const Painting = () => {
-	const series = data.painting.series;
-	const inedito = data.painting.inedito;
-	const bw = data.painting.bw;
-	const sunya = data.painting.sunya;
-	console.log('paiting', typeof inedito);
+export const Drawing = () => {
+	const series = data.drawing.series;
+	const untitled = data.drawing.untitled;
+	console.log('drawing');
 	return (
 		<>
 			<Ul>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
-					<Inedito inedito={inedito} />
-				</LiPainting>
-				<LiPainting>
-					<H1>{series[1].serie}</H1>
-					<Bw bw={bw} />
-				</LiPainting>
-				<LiPainting>
-					<H1>{series[2].serie}</H1>
-					<Sunya sunya={sunya} />
+					<Untitled untitled={untitled} />
 				</LiPainting>
 			</Ul>
 		</>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Art } from './art';
 
-export const Inedito = (props) => {
+export const Untitled = (props) => {
 	return (
 		<>
-			{props.inedito.map((art) => (
+			{props.untitled.map((art) => (
 				<Art
 					key={art.id}
 					id={art.id}
