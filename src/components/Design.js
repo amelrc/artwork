@@ -32,7 +32,7 @@ export const Designs = () => {
 	const series = data.design.series;
 	const lamps = data.design.lamps;
 	const sketches = data.design.sketches;
-	console.log(sketches);
+
 	return (
 		<>
 			<Ul>

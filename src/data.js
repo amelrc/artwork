@@ -365,4 +365,4 @@ export const data = {
 		],
 	},
 };
-console.log(data.bio.about);
+

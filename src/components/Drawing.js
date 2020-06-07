@@ -31,7 +31,7 @@ export const H1 = styled.h1`
 export const Drawing = () => {
 	const series = data.drawing.series;
 	const untitled = data.drawing.untitled;
-	console.log('drawing');
+	
 	return (
 		<>
 			<Ul>

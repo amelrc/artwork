@@ -35,7 +35,6 @@ export const Painting = () => {
 	const inedito = data.painting.inedito;
 	const bw = data.painting.bw;
 	const sunya = data.painting.sunya;
-	console.log('paiting', typeof inedito);
 	return (
 		<>
 			<Ul>
