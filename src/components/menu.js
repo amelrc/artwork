@@ -43,24 +43,10 @@ const StyledMenu = styled.nav`
 export const Menu = ({ open }) => {
 	return (
 		<StyledMenu open={open}>
-			<a href='/'>
-				<span role='img' aria-label='about us'>
-					💁🏻‍♂️
-				</span>
-				About us
-			</a>
-			<a href='/'>
-				<span role='img' aria-label='price'>
-					💸
-				</span>
-				Pricing
-			</a>
-			<a href='/'>
-				<span role='img' aria-label='contact'>
-					📩
-				</span>
-				Contact
-			</a>
+			<a href='/paintings'>painting</a>
+			<a href='/drawings'>drawing</a>
+			<a href='/cutpapers'>cutpaper</a>
+			<a href='/designs'>design</a>
 		</StyledMenu>
 	);
 };
