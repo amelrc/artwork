@@ -233,63 +233,63 @@ export const data = {
 			{ id: 1, serie: 'architectural', text: 'inedito' },
 			{ id: 1, serie: 'sketches' },
 		],
+		lamps: [
+			{
+				id: 1,
+				image: L0,
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 2,
+				image: L1,
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 3,
+				image: L2,
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 4,
+				image: L3,
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+			{
+				id: 5,
+				image: L4,
+				title: 'title',
+				technique: 'technique',
+				sold: true,
+				overview: 'overview',
+			},
+		],
+		sketches: [
+			{
+				id: 1,
+				image: S0,
+			},
+			{
+				id: 2,
+				image: S1,
+			},
+			{
+				id: 3,
+				image: S2,
+			},
+		],
 	},
-	lamps: [
-		{
-			id: 1,
-			image: L0,
-			title: 'title',
-			technique: 'technique',
-			sold: true,
-			overview: 'overview',
-		},
-		{
-			id: 2,
-			image: L1,
-			title: 'title',
-			technique: 'technique',
-			sold: true,
-			overview: 'overview',
-		},
-		{
-			id: 3,
-			image: L2,
-			title: 'title',
-			technique: 'technique',
-			sold: true,
-			overview: 'overview',
-		},
-		{
-			id: 4,
-			image: L3,
-			title: 'title',
-			technique: 'technique',
-			sold: true,
-			overview: 'overview',
-		},
-		{
-			id: 5,
-			image: L4,
-			title: 'title',
-			technique: 'technique',
-			sold: true,
-			overview: 'overview',
-		},
-	],
-	sketches: [
-		{
-			id: 1,
-			image: S0,
-		},
-		{
-			id: 2,
-			image: S1,
-		},
-		{
-			id: 3,
-			image: S2,
-		},
-	],
 
 	about: {
 		contact: {

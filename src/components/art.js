@@ -85,7 +85,13 @@ export const Buy = styled(Bought)`
 export const Art = (props) => {
 	console.log('props in art', props);
 	const { id, image, name, technique, sold, overview, size } = props;
-	const available = sold ? <Bought></Bought> : <Buy></Buy>;
+	const available = sold ? (
+		<Bought></Bought>
+	) : (
+		<a href='mailto:amelrc@gmail.com'>
+			<Buy></Buy>{' '}
+		</a>
+	);
 
 	return (
 		<>

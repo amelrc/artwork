@@ -4,6 +4,7 @@ import { Painting } from './components/Painting';
 import { Header } from './components/header';
 import { Drawing } from './components/Drawing';
 import { Cutpaper } from './components/Cutpaper';
+import { Designs } from './components/Design';
 
 export default function App() {
 	return (
@@ -12,6 +13,7 @@ export default function App() {
 			<Painting />
 			<Drawing />
 			<Cutpaper />
+			<Designs />
 		</div>
 	);
 }
