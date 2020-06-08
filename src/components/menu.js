@@ -1,60 +1,57 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
+font-family: 'Raleway',sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: #effffa;
-	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-	height: 100vh;
+	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
 	text-align: left;
-	padding: 2rem;
+	padding: 5em 2em;
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	transition: transform 0.3s ease-in-out;
-
 	@media (max-width: 576px) {
 		width: 100%;
 	}
-
-	a {
-		font-size: 2rem;
-		text-transform: uppercase;
-		padding: 2rem 0;
-		font-weight: bold;
-		letter-spacing: 0.5rem;
-		color: #0d0c1d;
-		text-decoration: none;
-		transition: color 0.3s linear;
-
-		@media (max-width: 576px) {
-			font-size: 1.5rem;
-			text-align: center;
-		}
-
-		&:hover {
-			color: #343078;
-		}
+}
+`;
+const Links = styled(Link)`
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 0.2em;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	color: #fff332;
+	text-decoration: none;
+	transition: color 0.5s linear;
+	@media (max-width: 576px) {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	&:hover {
+		color: #8bc63f;
 	}
 `;
 
 export const Menu = ({ open }) => {
 	return (
 		<StyledMenu open={open}>
-			<a href='/paintings'>painting</a>
-			<a href='/drawings'>drawing</a>
-			<a href='/cutpapers'>cutpaper</a>
-			<a href='/designs'>design</a>
+			<Links to='/paintings'>painting</Links>
+			<Links to='/drawings'>drawing</Links>
+			<Links to='/cutpapers'>cutpaper</Links>
+			<Links to='/designs'>design</Links>
 		</StyledMenu>
 	);
 };
 
 const StyledBurger = styled.button`
 	position: absolute;
-	top: 5%;
-	left: 6rem;
+	top: 3em;
+	right: 6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -73,7 +70,7 @@ const StyledBurger = styled.button`
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		background: ${({ open }) => (open ? '#0D0C1D' : '#EFFFFA')};
+		background: #fff332;
 		border-radius: 10px;
 		transition: all 0.3s linear;
 		position: relative;

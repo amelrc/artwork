@@ -4,9 +4,6 @@ import { data } from '../data';
 import { device } from './art';
 import { OpArt } from './opart';
 
-const Ul = styled.ul`
-	padding: 0;
-`;
 const LiPainting = styled.li`
 	list-style: none;
 	display: flex;
@@ -33,12 +30,12 @@ export const Cutpaper = () => {
 	const opart = data.cutpaper.opart;
 	return (
 		<>
-			<Ul>
+			<ul>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
 					<OpArt opart={opart} />
 				</LiPainting>
-			</Ul>
+			</ul>
 		</>
 	);
 };

@@ -54,6 +54,7 @@ export const data = {
 				id: 1,
 				image: I0,
 				name: 'Yo tengo piedad de mi mismo',
+				progress: 'work in progress',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: 'overview',
@@ -365,4 +366,3 @@ export const data = {
 		],
 	},
 };
-

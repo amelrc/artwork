@@ -9,6 +9,7 @@ export const device = {
 };
 
 export const Li = styled.div`
+	border: 2px solid green;
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
@@ -22,19 +23,47 @@ export const Li = styled.div`
 		align-items: flex-end;
 	}
 `;
+
+export const ImgWrapper = styled.div`
+	border: 2px solid red;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	:first-child {
+		border: 2px solid blue;
+	}
+	:nth-child(3) {
+		border: 2px solid red;
+	}
+	:last-child {
+	}
+	@media screen and ${device.tablet} {
+		width: 70%;
+		justify-content: end;
+		display: flex;
+	}
+	@media screen and ${device.small} {
+		width: 100%;
+	}
+	@media screen and ${device.medium} {
+		width: 50%;
+	}
+`;
+
 export const Img = styled.img`
 	width: 100%;
 	@media screen and ${device.tablet} {
 		width: 70%;
 	}
 	@media screen and ${device.small} {
-		width: 60%;
+		width: 100%;
 	}
 	@media screen and ${device.medium} {
 		width: 50%;
 	}
 `;
 export const Ficha = styled.div`
+	border: 2px solid aqua;
 	text-align: left;
 	@media screen and ${device.tablet} {
 		width: 70%;
@@ -83,7 +112,7 @@ export const Buy = styled(Bought)`
 `;
 
 export const Art = (props) => {
-	const { id, image, name, technique, sold, overview, size } = props;
+	const { id, image, name, progress, technique, sold, overview, size } = props;
 	const available = sold ? (
 		<Bought></Bought>
 	) : (
@@ -95,13 +124,15 @@ export const Art = (props) => {
 	return (
 		<>
 			<Li>
-				<Img src={image} alt={id} />
+				<ImgWrapper>
+					<Img src={image} alt={id} />
+				</ImgWrapper>
 				<Ficha>
 					<Title>
 						{available}
 						<H3>{name}</H3>
 					</Title>
-					<H5>In progress</H5>
+					<H5>{progress}</H5>
 					<H5>{technique}</H5>
 					<H5>{size}</H5>
 					<P>{overview}</P>

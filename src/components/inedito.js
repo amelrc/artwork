@@ -10,6 +10,7 @@ export const Inedito = (props) => {
 					id={art.id}
 					image={art.image}
 					name={art.name}
+					progress={art.progress}
 					technique={art.technique}
 					sold={art.sold}
 					overview={art.overview}
