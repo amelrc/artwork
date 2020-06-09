@@ -37,13 +37,21 @@ const Links = styled(Link)`
 	}
 `;
 
-export const Menu = ({ open }) => {
+export const Menu = ({ open, setOpen }) => {
 	return (
 		<StyledMenu open={open}>
-			<Links to='/paintings'>painting</Links>
-			<Links to='/drawings'>drawing</Links>
-			<Links to='/cutpapers'>cutpaper</Links>
-			<Links to='/designs'>design</Links>
+			<Links open={open} onClick={() => setOpen(!open)} to='/paintings'>
+				painting
+			</Links>
+			<Links open={open} onClick={() => setOpen(!open)} to='/drawings'>
+				drawing
+			</Links>
+			<Links open={open} onClick={() => setOpen(!open)} to='/cutpapers'>
+				cutpaper
+			</Links>
+			<Links open={open} onClick={() => setOpen(!open)} to='/designs'>
+				design
+			</Links>
 		</StyledMenu>
 	);
 };
@@ -62,11 +70,9 @@ const StyledBurger = styled.button`
 	cursor: pointer;
 	padding: 0;
 	z-index: 10;
-
 	&:focus {
 		outline: none;
 	}
-
 	div {
 		width: 2rem;
 		height: 0.25rem;
@@ -75,8 +81,8 @@ const StyledBurger = styled.button`
 		transition: all 0.3s linear;
 		position: relative;
 		transform-origin: 1px;
-
 		:first-child {
+			color: red;
 			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
 		}
 

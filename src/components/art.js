@@ -25,15 +25,13 @@ export const Li = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-	border: 2px solid red;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	:first-child {
-		border: 2px solid blue;
 	}
-	:nth-child(3) {
-		border: 2px solid red;
+	:nth-child() {
+		border: 20px solid red;
 	}
 	:last-child {
 	}
