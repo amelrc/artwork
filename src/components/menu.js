@@ -10,11 +10,12 @@ const StyledMenu = styled.nav`
 	align-items: center;
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
-	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+	opacity: ${({ open }) => (open ? '1' : '0')};
 	// text-align: left;
 	top: 0;
 	right: 0;
-	transition: transform 0.3s ease-in-out;
+	// transition: transform 0.3s ease-in-out;
+	transition: opacity 0.5s, visibility 0.5s;
 `;
 const Links = styled(NavLink)`
 	font-size: 2rem;
@@ -24,7 +25,8 @@ const Links = styled(NavLink)`
 	letter-spacing: 0.5rem;
 	color: #fff332;
 	text-decoration: none;
-	transition: color 0.5s linear;
+	transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(-100%)')};
+	transition: color 0.5s linear, transform 0.5s;
 	@media (max-width: 576px) {
 		font-size: 1.5rem;
 		text-align: center;

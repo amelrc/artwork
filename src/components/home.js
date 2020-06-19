@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const HomeText = styled.div`
 	// position: relative;
-	margin-top: 120px;
+	margin: 120px auto;
+	font-size: 3em;
+	width: 80%;
 `;
 
 export const Home = () => {
@@ -13,7 +15,10 @@ export const Home = () => {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat.
+				commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+				elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+				ut aliquip ex ea commodo consequat.
 			</HomeText>
 		</>
 	);

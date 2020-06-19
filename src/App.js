@@ -14,7 +14,7 @@ export default function App() {
 		<BrowserRouter>
 			<div className='App'>
 				<Header />
-				<Route path='/home' component={Home} />
+				<Route exact path='/' component={Home} />
 				<Route path='/paintings' component={Painting} />
 				<Route path='/drawings' component={Drawing} />
 				<Route path='/cutpapers' component={Cutpaper} />

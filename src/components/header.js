@@ -10,6 +10,8 @@ const AClogo = styled.img`
 	position: absolute;
 	top: 1em;
 	left: 2rem;
+	cursor: pointer;
+	background-color: red;
 `;
 const HeaderWrapper = styled.div`
 	background-color: white;
@@ -24,7 +26,7 @@ export const Header = () => {
 	return (
 		<>
 			<HeaderWrapper>
-				<Link to='/home'>
+				<Link to='/'>
 					<AClogo src={Logo} alt='logo' />
 				</Link>
 				<div ref={node}>
