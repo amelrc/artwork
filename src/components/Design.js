@@ -1,33 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { data } from '../data';
-import { device } from './art';
+import { Img, Li } from './art';
 import { Lamps } from './lamps';
+import { Ul, LiPainting, H1, PWrapper, P } from './Painting';
 
-const Ul = styled.ul`
-	padding: 0;
-`;
-const LiPainting = styled.li`
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	margin-top: 100px;
-	align-items: flex-start;
-	@media screen and ${device.tablet} {
-		align-items: flex-start;
-	}
-	@media screen and ${device.medium} {
-		flex-direction: column;
-	}
-`;
-export const H1 = styled.h1`
-	text-transform: uppercase;
-	font-style: italic;
-	font-family: 'Raleway', sans-serif;
-	color: #5a5a5a;
-	margin: 0 30px;
-`;
 export const Designs = () => {
 	const series = data.design.series;
 	const lamps = data.design.lamps;
@@ -38,16 +15,23 @@ export const Designs = () => {
 			<Ul>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
+					<PWrapper>
+						<P>{series[0].text}</P>
+					</PWrapper>
 					<Lamps lamps={lamps} />
 				</LiPainting>
-				<H1>{series[1].serie}</H1>
-				{sketches.map((sketch) => {
-					return (
-						<LiPainting>
-							<img src={sketch.image} alt={sketch.id} />
-						</LiPainting>
-					);
-				})}
+				{/* <H1>{series[1].serie}</H1>
+				<div>
+					{sketches.map((sketch) => {
+						return (
+							<Li>
+								<LiPainting>
+									<Img src={sketch.image} alt={sketch.id} />
+								</LiPainting>
+							</Li>
+						);
+					})}
+				</div> */}
 			</Ul>
 		</>
 	);

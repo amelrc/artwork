@@ -6,10 +6,12 @@ import { Inedito } from './inedito';
 import { Bw } from './bw';
 import { Sunya } from './sunya';
 
-const Ul = styled.ul`
+export const Ul = styled.ul`
+	margin: auto;
+	width: 90%;
 	padding: 0;
 `;
-const LiPainting = styled.li`
+export const LiPainting = styled.li`
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +32,18 @@ export const H1 = styled.h1`
 	color: #5a5a5a;
 	margin: 0 30px;
 `;
+
+export const PWrapper = styled.div`
+	display: flex;
+	width: 100%;
+	justify-content: center;
+`;
+
+export const P = styled.p`
+	width: 70%;
+	font-style: italic;
+	text-align: left;
+`;
 export const Painting = () => {
 	const series = data.painting.series;
 	const inedito = data.painting.inedito;
@@ -40,14 +54,23 @@ export const Painting = () => {
 			<Ul>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
+					<PWrapper>
+						<P>{series[0].text}</P>
+					</PWrapper>
 					<Inedito inedito={inedito} />
 				</LiPainting>
 				<LiPainting>
 					<H1>{series[1].serie}</H1>
+					<PWrapper>
+						<P>{series[1].text}</P>
+					</PWrapper>
 					<Bw bw={bw} />
 				</LiPainting>
 				<LiPainting>
 					<H1>{series[2].serie}</H1>
+					<PWrapper>
+						<P>{series[2].text}</P>
+					</PWrapper>
 					<Sunya sunya={sunya} />
 				</LiPainting>
 			</Ul>

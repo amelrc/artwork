@@ -9,10 +9,10 @@ export const device = {
 };
 
 export const Li = styled.div`
-	border: 2px solid green;
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
+
 	@media screen and ${device.tablet} {
 		align-items: center;
 	}
@@ -28,13 +28,6 @@ export const ImgWrapper = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	:first-child {
-	}
-	:nth-child() {
-		border: 20px solid red;
-	}
-	:last-child {
-	}
 	@media screen and ${device.tablet} {
 		width: 70%;
 		justify-content: end;
@@ -51,17 +44,16 @@ export const ImgWrapper = styled.div`
 export const Img = styled.img`
 	width: 100%;
 	@media screen and ${device.tablet} {
-		width: 70%;
+		width: 90%;
 	}
 	@media screen and ${device.small} {
 		width: 100%;
 	}
 	@media screen and ${device.medium} {
-		width: 50%;
+		width: 100%;
 	}
 `;
 export const Ficha = styled.div`
-	border: 2px solid aqua;
 	text-align: left;
 	@media screen and ${device.tablet} {
 		width: 70%;
@@ -115,7 +107,7 @@ export const Art = (props) => {
 		<Bought></Bought>
 	) : (
 		<a href='mailto:amelrc@gmail.com'>
-			<Buy></Buy>{' '}
+			<Buy></Buy>
 		</a>
 	);
 

@@ -3,23 +3,20 @@ import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
-font-family: 'Raleway',sans-serif;
+	background-color: white;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: center;
+	font-family: 'Raleway', sans-serif;
 	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
-	text-align: left;
-	padding: 5em 2em;
-	position: absolute;
+	// text-align: left;
 	top: 0;
 	right: 0;
 	transition: transform 0.3s ease-in-out;
-	@media (max-width: 576px) {
-		width: 100%;
-	}
-}
 `;
-const Links = styled(Link)`
+const Links = styled(NavLink)`
 	font-size: 2rem;
 	text-transform: uppercase;
 	padding: 0.2em;
@@ -53,57 +50,6 @@ export const Menu = ({ open, setOpen }) => {
 				design
 			</Links>
 		</StyledMenu>
-	);
-};
-
-const StyledBurger = styled.button`
-	position: absolute;
-	top: 3em;
-	right: 6rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 2rem;
-	height: 2rem;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	padding: 0;
-	z-index: 10;
-	&:focus {
-		outline: none;
-	}
-	div {
-		width: 2rem;
-		height: 0.25rem;
-		background: #fff332;
-		border-radius: 10px;
-		transition: all 0.3s linear;
-		position: relative;
-		transform-origin: 1px;
-		:first-child {
-			color: red;
-			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
-		}
-
-		:nth-child(2) {
-			opacity: ${({ open }) => (open ? '0' : '1')};
-			transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
-		}
-
-		:nth-child(3) {
-			transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
-		}
-	}
-`;
-
-export const Burger = ({ open, setOpen }) => {
-	return (
-		<StyledBurger open={open} onClick={() => setOpen(!open)}>
-			<div />
-			<div />
-			<div />
-		</StyledBurger>
 	);
 };
 

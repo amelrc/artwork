@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../images/AC-logo.png';
-import { Burger, Menu } from './menu';
+import { Menu } from './menu';
+import { Burger } from './burger';
 
 const AClogo = styled.img`
 	width: 100px;
 	position: absolute;
 	top: 1em;
-	left: 5rem;
+	left: 2rem;
 `;
 const HeaderWrapper = styled.div`
 	background-color: white;

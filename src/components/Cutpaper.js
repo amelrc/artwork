@@ -3,39 +3,22 @@ import styled from 'styled-components';
 import { data } from '../data';
 import { device } from './art';
 import { OpArt } from './opart';
+import { Ul, LiPainting, H1, P, PWrapper } from './Painting';
 
-const LiPainting = styled.li`
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	margin-top: 100px;
-	align-items: flex-start;
-	@media screen and ${device.tablet} {
-		align-items: flex-start;
-	}
-	@media screen and ${device.medium} {
-		flex-direction: column;
-	}
-`;
-export const H1 = styled.h1`
-	text-transform: uppercase;
-	font-style: italic;
-	font-family: 'Raleway', sans-serif;
-	color: #5a5a5a;
-	margin: 0 30px;
-`;
 export const Cutpaper = () => {
 	const series = data.cutpaper.series;
 	const opart = data.cutpaper.opart;
 	return (
 		<>
-			<ul>
+			<Ul>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
+					<PWrapper>
+						<P>{series[0].text}</P>
+					</PWrapper>
 					<OpArt opart={opart} />
 				</LiPainting>
-			</ul>
+			</Ul>
 		</>
 	);
 };

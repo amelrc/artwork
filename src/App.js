@@ -19,6 +19,7 @@ export default function App() {
 				<Route path='/drawings' component={Drawing} />
 				<Route path='/cutpapers' component={Cutpaper} />
 				<Route path='/designs' component={Designs} />
+				<Route path='/bio' component={Footer} />
 				<Footer />
 			</div>
 		</BrowserRouter>
