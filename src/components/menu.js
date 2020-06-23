@@ -1,20 +1,18 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
 	background-color: white;
 	height: 100vh;
-	display: flex;
+
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
-	opacity: ${({ open }) => (open ? '1' : '0')};
-	// text-align: left;
-	top: 0;
-	right: 0;
-	// transition: transform 0.3s ease-in-out;
+	opacity: ${({ open }) => (open ? 1 : 0)};
+	display: ${({ open }) => (open ? 'flex ' : 'none')};
+	visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
 	transition: opacity 0.5s, visibility 0.5s;
 `;
 const Links = styled(NavLink)`
@@ -37,18 +35,20 @@ const Links = styled(NavLink)`
 `;
 
 export const Menu = ({ open, setOpen }) => {
+	const handleClick = () => setOpen(!open);
+
 	return (
 		<StyledMenu open={open}>
-			<Links open={open} onClick={() => setOpen(!open)} to='/paintings'>
+			<Links open={open} onClick={handleClick} to='/paintings'>
 				painting
 			</Links>
-			<Links open={open} onClick={() => setOpen(!open)} to='/drawings'>
+			<Links open={open} onClick={handleClick} to='/drawings'>
 				drawing
 			</Links>
-			<Links open={open} onClick={() => setOpen(!open)} to='/cutpapers'>
+			<Links open={open} onClick={handleClick} to='/cutpapers'>
 				cutpaper
 			</Links>
-			<Links open={open} onClick={() => setOpen(!open)} to='/designs'>
+			<Links open={open} onClick={handleClick} to='/designs'>
 				design
 			</Links>
 		</StyledMenu>

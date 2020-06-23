@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../images/AC-logo.png';
 import { Menu } from './menu';
@@ -7,29 +7,27 @@ import { Burger } from './burger';
 
 const AClogo = styled.img`
 	width: 100px;
-	position: absolute;
 	top: 1em;
 	left: 2rem;
-	cursor: pointer;
-	background-color: red;
+	cursor: ${({ open }) => (open ? 'initial' : 'pointer')};
+	position: absolute;
+	opacity: ${({ open }) => (open ? '0' : '1')};
 `;
 const HeaderWrapper = styled.div`
-	background-color: white;
 	height: 100px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 `;
-export const Header = () => {
-	const [open, setOpen] = React.useState(false);
-	const node = React.useRef();
+export const Header = (props) => {
+	const { open, setOpen } = props;
 	return (
 		<>
 			<HeaderWrapper>
-				<Link to='/'>
-					<AClogo src={Logo} alt='logo' />
-				</Link>
-				<div ref={node}>
+				<NavLink to='/'>
+					<AClogo open={open} src={Logo} alt='logo' />
+				</NavLink>
+				<div>
 					<Burger open={open} setOpen={setOpen} />
 					<Menu open={open} setOpen={setOpen} />
 				</div>

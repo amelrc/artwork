@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import IconEmail from '../images/correo.svg';
 import { Ul, LiPainting, H1, PWrapper, P } from './Painting';
@@ -13,6 +14,7 @@ const FooterWrapper = styled.div`
 	position: fixed;
 	bottom: 0;
 	align-items: center;
+	opacity: ${({ open }) => (open ? '0' : '1')};
 `;
 
 const Bio = styled(H1)`
@@ -48,14 +50,17 @@ const Img = styled.img`
 	}
 `;
 
-export const Footer = () => {
+export const Footer = (props) => {
+	const { open, setOpen } = props;
 	return (
 		<>
-			<FooterWrapper>
+			<FooterWrapper open={open}>
 				<Email>
 					<Img src={IconEmail} />
 				</Email>
-				<Bio>bio</Bio>
+				<NavLink style={{ textDecoration: 'none' }} to='/bio'>
+					<Bio>bio</Bio>
+				</NavLink>
 			</FooterWrapper>
 		</>
 	);

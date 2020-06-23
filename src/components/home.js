@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HomeText = styled.div`
+export const HomeText = styled.div`
 	// position: relative;
 	margin: 120px auto;
 	font-size: 3em;
-	width: 80%;
+	width: 70%;
 `;
 
 export const Home = () => {

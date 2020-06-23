@@ -10,6 +10,7 @@ export const Ul = styled.ul`
 	margin: auto;
 	width: 90%;
 	padding: 0;
+	overflow: ${({ open }) => (open ? 'auto' : '')};
 `;
 export const LiPainting = styled.li`
 	list-style: none;
@@ -32,13 +33,11 @@ export const H1 = styled.h1`
 	color: #5a5a5a;
 	margin: 0 30px;
 `;
-
 export const PWrapper = styled.div`
 	display: flex;
 	width: 100%;
 	justify-content: center;
 `;
-
 export const P = styled.p`
 	width: 70%;
 	font-style: italic;
@@ -49,9 +48,13 @@ export const Painting = () => {
 	const inedito = data.painting.inedito;
 	const bw = data.painting.bw;
 	const sunya = data.painting.sunya;
+
+	const [open, setOpen] = React.useState(false);
+	const node = React.useRef();
+
 	return (
 		<>
-			<Ul>
+			<Ul ref={node} open={open} setOpen={setOpen}>
 				<LiPainting>
 					<H1>{series[0].serie}</H1>
 					<PWrapper>

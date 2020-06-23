@@ -92,7 +92,8 @@ export const Bought = styled.div`
 	background-color: tomato;
 	border-radius: 20px;
 	margin: 0 4px 0 -16px;
-	:hover {
+	cursor: pointer;
+	&:hover {
 		content: 'sold';
 	}
 `;
