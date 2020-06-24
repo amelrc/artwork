@@ -12,7 +12,6 @@ export const Li = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
-
 	@media screen and ${device.tablet} {
 		align-items: center;
 	}
@@ -40,7 +39,6 @@ export const ImgWrapper = styled.div`
 		width: 50%;
 	}
 `;
-
 export const Img = styled.img`
 	width: 100%;
 	@media screen and ${device.tablet} {
@@ -74,7 +72,7 @@ export const H3 = styled.h3`
 	margin: 0.3em 0;
 	font-weight: lighter;
 	color: #5a5a5a;
-	font-style: italic;
+	font-style: ${(props) => (props.name === 'untitled' ? 'normal' : 'italic')};
 `;
 export const H5 = styled.h5`
 	font-family: 'Raleway', sans-serif;
@@ -85,7 +83,6 @@ export const P = styled.p`
 	color: dimgray;
 	margin: 6px auto;
 `;
-
 export const Bought = styled.div`
 	width: 10px;
 	height: 10px;
@@ -93,22 +90,18 @@ export const Bought = styled.div`
 	border-radius: 20px;
 	margin: 0 4px 0 -16px;
 `;
-
 export const Buy = styled(Bought)`
 	background-color: limegreen;
 	cursor: pointer;
 	box-shadow: 0 0 0 0.2em limegreen;
 	animation: pulse 3s infinite;
-
 	@keyframes pulse {
 		0% {
 			box-shadow: 0 0 0 0.2em #32cd3217;
 		}
-
 		50% {
 			box-shadow: 0 0 0 0.3em #32cd3252;
 		}
-
 		100% {
 			box-shadow: 0 0 0 0 #32cd323b;
 		}
@@ -134,7 +127,7 @@ export const Art = (props) => {
 				<Ficha>
 					<Title>
 						{available}
-						<H3>{name}</H3>
+						<H3 name={name}>{name}</H3>
 					</Title>
 					<H5>{progress}</H5>
 					<H5>{technique}</H5>

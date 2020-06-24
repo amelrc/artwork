@@ -12,6 +12,9 @@ export const Ul = styled.ul`
 	width: 88%;
 	padding: 0;
 	overflow: ${({ open }) => (open ? 'auto' : '')};
+	@media screen and ${device.tablet} {
+		width: 80%;
+	}
 `;
 export const LiPainting = styled.li`
 	list-style: none;

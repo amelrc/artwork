@@ -154,7 +154,7 @@ export const data = {
 			{
 				id: 1,
 				image: D0,
-				name: 'untitled',
+				name: 'Tesa',
 				technique: 'graphite on paper',
 				sold: false,
 				overview: '',
@@ -163,7 +163,7 @@ export const data = {
 			{
 				id: 2,
 				image: D1,
-				name: 'untitled',
+				name: 'Mirando al cielo',
 				technique: 'graphite on paper',
 				sold: true,
 				overview: '',

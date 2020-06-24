@@ -11,7 +11,6 @@ const PBio = styled(P)`
 	font-size: 1.5em;
 	line-height: 1.5em;
 `;
-
 const Exhibitions = styled(Ul)`
 	padding: 20px 0;
 	border-bottom: 1px solid gray;
