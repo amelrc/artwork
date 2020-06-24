@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from './art';
 
 export const HomeText = styled.div`
-	// position: relative;
 	margin: 120px auto;
-	font-size: 3em;
+	font-size: 1.5em;
 	width: 70%;
+	@media screen and ${device.tablet} {
+		font-size: 2em;
+	}
 `;
 
 export const Home = () => {

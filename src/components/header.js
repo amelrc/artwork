@@ -6,7 +6,7 @@ import { Menu } from './menu';
 import { Burger } from './burger';
 
 const AClogo = styled.img`
-	width: 100px;
+	width: 60px;
 	top: 1em;
 	left: 2rem;
 	cursor: ${({ open }) => (open ? 'initial' : 'pointer')};
@@ -14,8 +14,8 @@ const AClogo = styled.img`
 	opacity: ${({ open }) => (open ? '0' : '1')};
 `;
 const HeaderWrapper = styled.div`
-	height: 100px;
-	width: 100%;
+	height: 70px;
+	width: 98%;
 	position: fixed;
 	top: 0;
 `;

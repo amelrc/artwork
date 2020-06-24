@@ -92,14 +92,27 @@ export const Bought = styled.div`
 	background-color: tomato;
 	border-radius: 20px;
 	margin: 0 4px 0 -16px;
-	cursor: pointer;
-	&:hover {
-		content: 'sold';
-	}
 `;
 
 export const Buy = styled(Bought)`
 	background-color: limegreen;
+	cursor: pointer;
+	box-shadow: 0 0 0 0.2em limegreen;
+	animation: pulse 3s infinite;
+
+	@keyframes pulse {
+		0% {
+			box-shadow: 0 0 0 0.2em #32cd3217;
+		}
+
+		50% {
+			box-shadow: 0 0 0 0.3em #32cd3252;
+		}
+
+		100% {
+			box-shadow: 0 0 0 0 #32cd323b;
+		}
+	}
 `;
 
 export const Art = (props) => {

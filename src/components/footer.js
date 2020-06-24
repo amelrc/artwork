@@ -9,8 +9,7 @@ const FooterWrapper = styled.div`
 	justify-content: space-between;
 	width: 100%;
 	background-color: transparent;
-	height: 100px;
-	width: 100%;
+	height: 70px;
 	position: fixed;
 	bottom: 0;
 	align-items: center;
@@ -42,7 +41,7 @@ const Email = styled.div`
 		align-items: center;
 	}
 `;
-// #fff332
+
 const Img = styled.img`
 	width: 30px;
 	&: hover {

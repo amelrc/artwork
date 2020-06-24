@@ -8,7 +8,8 @@ import { Sunya } from './sunya';
 
 export const Ul = styled.ul`
 	margin: auto;
-	width: 90%;
+	margin-bottom: 50px;
+	width: 88%;
 	padding: 0;
 	overflow: ${({ open }) => (open ? 'auto' : '')};
 `;

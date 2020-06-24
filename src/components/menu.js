@@ -3,17 +3,16 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledMenu = styled.nav`
+	font-family: 'Raleway', sans-serif;
 	background-color: white;
 	height: 100vh;
-
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Raleway', sans-serif;
-	opacity: ${({ open }) => (open ? 1 : 0)};
-	display: ${({ open }) => (open ? 'flex ' : 'none')};
+
+	display: ${({ open }) => (open ? 'flex' : 'initial')};
 	visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
-	transition: opacity 0.5s, visibility 0.5s;
+	transition: visibility;
 `;
 const Links = styled(NavLink)`
 	font-size: 2rem;
@@ -53,20 +52,4 @@ export const Menu = ({ open, setOpen }) => {
 			</Links>
 		</StyledMenu>
 	);
-};
-
-const useOnClickOutside = (ref, handler) => {
-	React.useEffect(() => {
-		const listener = (event) => {
-			if (!ref.current || ref.current.contains(event.target)) {
-				return;
-			}
-			handler(event);
-		};
-		document.addEventListener('mousedown', listener);
-
-		return () => {
-			document.removeEventListener('mousedown', listener);
-		};
-	}, [ref, handler]);
 };
