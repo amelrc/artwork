@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { data } from '../data';
-import { device } from './art';
+// import { device } from './art';
 import { OpArt } from './opart';
 import { Ul, LiPainting, H1, P, PWrapper } from './Painting';
 

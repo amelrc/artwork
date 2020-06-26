@@ -1,14 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { data } from '../data';
-import { Img, Li } from './art';
+// import { Img, Li } from './art';
 import { Lamps } from './lamps';
 import { Ul, LiPainting, H1, PWrapper, P } from './Painting';
 
 export const Designs = () => {
 	const series = data.design.series;
 	const lamps = data.design.lamps;
-	const sketches = data.design.sketches;
+	// const sketches = data.design.sketches;
 
 	return (
 		<>

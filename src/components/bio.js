@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { data } from '../data';
-import { Ul, LiPainting, H1, P, PWrapper } from './Painting';
+import { Ul, H1, P } from './Painting';
 import { Ficha, Title, H3, H5 } from './art';
 import { HomeText } from './home';
 
@@ -23,9 +23,9 @@ export const Bio = () => {
 			<HomeText style={{ fontSize: '1em' }}>
 				<PBio>{biografia.about}</PBio>
 				<H1 style={{ marginTop: '70px' }}>Exhibitions</H1>
-				{exhibitions.map((exh) => {
+				{exhibitions.map((exh, index) => {
 					return (
-						<Exhibitions>
+						<Exhibitions key={index}>
 							<Ficha>
 								<Title>
 									<H3>{exh.title}</H3>

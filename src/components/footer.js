@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import IconEmail from '../images/correo.svg';
-import { Ul, LiPainting, H1, PWrapper, P } from './Painting';
+import { H1 } from './Painting';
 
 const FooterWrapper = styled.div`
 	display: flex;
