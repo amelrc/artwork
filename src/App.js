@@ -17,12 +17,12 @@ export default function App() {
 			<div className='App'>
 				<Header open={open} setOpen={setOpen} />
 				<div style={{ display: open ? 'none' : 'block' }}>
-					<Route exact path='/' component={Home} />
 					<Route path='/paintings' component={Painting} />
 					<Route path='/drawings' component={Drawing} />
 					<Route path='/cutpapers' component={Cutpaper} />
 					<Route path='/designs' component={Designs} />
 					<Route path='/bio' component={Bio} />
+					<Route path='/home' component={Home} />
 				</div>
 				<Footer open={open} setOpen={setOpen} />
 			</div>
