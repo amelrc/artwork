@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import { Painting } from './components/Painting';
 import { Header } from './components/header';
 import { Drawing } from './components/Drawing';
@@ -24,7 +24,7 @@ export const HomeText = styled.div`
 export default function App() {
 	const [open, setOpen] = React.useState(false);
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div className='App'>
 				<Header open={open} setOpen={setOpen} />
 				<div style={{ display: open ? 'none' : 'block' }}>
@@ -47,6 +47,6 @@ export default function App() {
 				</div>
 				<Footer open={open} setOpen={setOpen} />
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
