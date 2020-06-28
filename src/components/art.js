@@ -41,6 +41,7 @@ export const ImgWrapper = styled.div`
 `;
 export const Img = styled.img`
 	width: 100%;
+	height: intrinsic;
 	@media screen and ${device.tablet} {
 		width: 90%;
 	}
@@ -72,7 +73,12 @@ export const H3 = styled.h3`
 	margin: 0.3em 0;
 	font-weight: lighter;
 	color: #5a5a5a;
-	font-style: ${(props) => (props.name === 'untitled' ? 'normal' : 'italic')};
+	font-style: ${(props) =>
+		props.name === 'untitled' ||
+		props.name === 'untitled - (off)' ||
+		props.name === 'untitled - (on)'
+			? 'normal'
+			: 'italic'};
 `;
 export const H5 = styled.h5`
 	font-family: 'Raleway', sans-serif;
@@ -110,6 +116,7 @@ export const Buy = styled(Bought)`
 
 export const Art = (props) => {
 	const { id, image, name, progress, technique, sold, overview, size } = props;
+
 	const available = sold ? (
 		<Bought></Bought>
 	) : (

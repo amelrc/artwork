@@ -9,10 +9,10 @@ export const Lamps = (props) => {
 					key={art.id}
 					id={art.id}
 					image={art.image}
-					name={art.title}
-					// technique={art.technique}
+					name={art.name}
+					technique={art.technique}
 					sold={art.sold}
-					overview={art.overview}
+					// overview={art.overview}
 					size={art.size}
 				/>
 			))}
