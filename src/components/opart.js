@@ -9,7 +9,7 @@ export const OpArt = (props) => {
 					key={art.id}
 					id={art.id}
 					image={art.image}
-					name={art.title}
+					name={art.name}
 					technique={art.technique}
 					sold={art.sold}
 					overview={art.overview}

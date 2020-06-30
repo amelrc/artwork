@@ -34,26 +34,25 @@ export const data = {
 				id: 1,
 				serie: 'inedito',
 				text:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+					'This is a self portrait. I make reference to the great artwork of Miguelangelo: "Pietá".',
 			},
 			{
 				id: 2,
-				serie: 'b&w',
-				text:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				serie: 'Black with Whites',
+				text: '',
 			},
 			{
 				id: 2,
 				serie: 'sunya',
 				text:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+					'Sunya translates from sanscrit as emptiness. This piece of art belongs to a collection "Sunya: Perfection of wisdom". Being in a Sunya state does not mean to be on a complete absence of oneself but more like to empty your mind in order to think with clarity.',
 			},
 		],
 		inedito: [
 			{
 				id: 1,
 				image: I0,
-				name: 'Yo tengo piedad de mi mismo',
+				name: 'Piedad de mi mismo / Mercy of myself',
 				progress: 'work in progress',
 				technique: 'oil on canvas',
 				sold: true,
@@ -66,7 +65,7 @@ export const data = {
 			{
 				id: 1,
 				image: P0,
-				name: 'b/w',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: '',
@@ -75,7 +74,7 @@ export const data = {
 			{
 				id: 2,
 				image: P1,
-				name: 'single',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: '',
@@ -84,7 +83,7 @@ export const data = {
 			{
 				id: 3,
 				image: P2,
-				name: 'single',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: false,
 				overview: '',
@@ -93,7 +92,7 @@ export const data = {
 			{
 				id: 4,
 				image: P3,
-				name: 'single',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: false,
 				overview: '',
@@ -102,7 +101,7 @@ export const data = {
 			{
 				id: 5,
 				image: P4,
-				name: 'single',
+				name: 'untitled',
 				technique: 'technique',
 				sold: false,
 				overview: '',
@@ -111,7 +110,7 @@ export const data = {
 			{
 				id: 6,
 				image: P5,
-				name: 'single',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: false,
 				overview: '',
@@ -121,7 +120,7 @@ export const data = {
 			{
 				id: 7,
 				image: P6,
-				name: 'single',
+				name: 'untitled',
 				technique: 'oil on canvas',
 				sold: true,
 				overview: '',
@@ -145,8 +144,7 @@ export const data = {
 			{
 				id: 1,
 				serie: 'untitled',
-				text:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				text: '',
 			},
 		],
 
@@ -204,8 +202,7 @@ export const data = {
 			{
 				id: 1,
 				serie: 'Optical Illusions',
-				text:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				text: '',
 			},
 		],
 		opart: [
@@ -250,7 +247,11 @@ export const data = {
 
 	design: {
 		series: [
-			{ id: 1, serie: 'architectural', text: 'inedito' },
+			{
+				id: 1,
+				serie: 'architectural',
+				text: 'These designs are inspired in architecture, a passion of mine.',
+			},
 			{ id: 1, serie: 'sketches' },
 		],
 		lamps: [
@@ -323,7 +324,7 @@ export const data = {
 	},
 	bio: {
 		about:
-			'Amel, born in Havana, has been working as an artist for more than 15 years. He is a multidisciplinary artist who lives in The Hague, The Netherlands. Amel started to receive professional art lessons as a young talent at Taller d’Manero cultural program, continuing his artistic development at The National Academy of Fine Arts San Alejandro in Havana, Cuba. Holding a Master in Cultural Heritage from the Reinwardt Academy in Amsterdam, his artistic practice includes different disciplines such as painting, sculpture, drawing and cut-paper. Having the human being as the center of his work thematic, Amel illustrates emotions and behaviors that are present in our every day life. Questioning the human thinking and the mind, themes like fragility, violence, uncertainty, power, irrationality and death, form part of his realm of inspiration.',
+			'Amel, born in Havana, has been creating art for more than 15 years. He is a multidisciplinary artist now living in The Hague, The Netherlands. Amel started to receive professional art lessons as when he was young at Taller d’Manero cultural program, then moving on to continue his artistic development at The National Academy of Fine Arts San Alejandro in Havana, Cuba. Amel went on to complete a Master’s in Cultural Heritage from the Reinwardt Academy in Amsterdam. His artistic practice includes different disciplines such as painting, sculpture, drawing and cut-paper. Having the human being as the center of his thematic work, Amel illustrates emotions and behaviors that are present in our everyday life. Questioning the human thinking and the mind – themes like fragility, violence, uncertainty, power, irrationality and death – form a large part of his inspiration.',
 		exhibitions: [
 			{
 				id: 1,
