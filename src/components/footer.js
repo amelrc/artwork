@@ -54,9 +54,11 @@ export const Footer = (props) => {
 	return (
 		<>
 			<FooterWrapper open={open}>
-				<Email>
-					<Img src={IconEmail} />
-				</Email>
+				<a href='mailto:amelrc@gmail.com'>
+					<Email>
+						<Img src={IconEmail} />
+					</Email>
+				</a>
 				<NavLink style={{ textDecoration: 'none' }} to='/bio'>
 					<Bio>bio</Bio>
 				</NavLink>
